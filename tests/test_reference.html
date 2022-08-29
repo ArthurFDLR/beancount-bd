@@ -1,0 +1,254 @@
+
+<!doctype html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8" />
+                <link rel="stylesheet" href="../css/new/bd-mega-priv.css" type="text/css" />
+                        <link rel="stylesheet" href="../css/new/style.css" type="text/css" />
+
+        
+        
+                <link rel="stylesheet" href="/assets/vendor/brandings-stylesheets/dist/css-brands/boursedirect.css">
+                
+        <script language="JavaScript" type="text/javascript" src="/javascript/lib/jquery/1.9.1/jquery.js"></script>
+        <script language="JavaScript" type="text/javascript" src="/javascript/lib/jquery/migrate/1.1.1/jquery-migrate.js"></script>
+        <script language="JavaScript" type="text/javascript" src="/javascript/lib/jquery/ui/jquery-ui-1.10.2.custom.js"></script>
+
+        <script language="JavaScript" type="text/javascript" src="/javascript/legacy/jquery.hoverIntent.js"></script>
+        <script language="JavaScript" type="text/javascript" src="/javascript/legacy/superfish.js"></script>
+
+        <script language="JavaScript" type="text/JavaScript" src="../scripts/main-mega.js"></script>
+
+                <script language="JavaScript" type="text/JavaScript" src="../scripts/compte.js"></script>
+        
+                <script language="JavaScript" type="text/JavaScript" src="../scripts/compteInventaire.js"></script>
+        
+                <script language="JavaScript" type="text/JavaScript" src="/streaming/javascripts/spry/includes/SpryUtils.js"></script>
+                <script language="JavaScript" type="text/JavaScript" src="/streaming/javascripts/spry/includes/SpryData.js"></script>
+        
+        <script language="JavaScript" type="text/javascript" src="/streaming/iframeResizer.contentWindow.js"></script>
+        <script language="JavaScript" type="text/javascript" src="/javascript/legacy/jquery.cookie.js"></script>
+        <link rel="stylesheet" href="/css/font-awesome/css/font-awesome.min.css">
+
+    </head>
+
+    <body class="body-legacy" >
+
+        <div id="center-container">
+            <div id="boxTop">
+                <div id="center">
+                    <div id="blocCentral">
+                        <div class="container container-legacy">
+                            <div class="row">
+                                <div class="col-md-12">
+                                                                        <form id="frmCompte" name="frmCompte" method="get">
+    <input type="hidden" name="ong" value="3" />
+    <div class="champ">
+    <label>Sélectionnez votre compte :</label>
+        <select id="nc" name="nc">
+                    <option value="1" selected> Mon compte ... </option>
+                </select>
+    </div>
+</form>
+
+<br />
+
+<div class="cadre" id="histoCompte"><div class="deco"></div>
+    <h6>Historique de compte</h6>
+    <table class="datas retour table-color-row">
+        <tr>
+            <th>Date op&eacute;ration</th>
+            <th>Date affectation</th>
+            <th>Libell&eacute;</th>
+            <th>Op&eacute;ration</th>
+            <th class="number">Qt&eacute;</th>
+            <th class="number">Cours</th>
+            <th class="number">Montant net</th>
+        </tr>
+                <tr class="row1">
+            <td class="impaire">22/08/2022</td>
+            <td class="paire">22/08/2022</td>
+            <td class="impaire"><a target=_parent href=fiche-valeur.php?val=E:PE500&pl=6&nc=1>AM.ETF PEA SP500 U.ETF EUR FCP AM.E.P.SP500 EUR</a></td>
+            <td class="paire">ACHAT COMPTANT  </td>
+            <td class="impaire number">10</td>
+            <td class="paire number">33,521 &euro;</td>
+            <td class="impaire number">-336,20 &euro;</td>
+        </tr>
+                <tr class="row2">
+            <td class="impaire">08/08/2022</td>
+            <td class="paire">08/08/2022</td>
+            <td class="impaire"><a target=_parent href=fiche-valeur.php?val=E:PUST&pl=6&nc=1>LYX.PEA NASDAQ-100 UC.ETF FCP LY.PEANASD.-100UC</a></td>
+            <td class="paire">ACHAT COMPTANT  </td>
+            <td class="impaire number">4</td>
+            <td class="paire number">51,94 &euro;</td>
+            <td class="impaire number">-208,75 &euro;</td>
+        </tr>
+                <tr class="row1">
+            <td class="impaire">29/07/2022</td>
+            <td class="paire">29/07/2022</td>
+            <td class="impaire"></a></td>
+            <td class="paire">VIRT MR ARTHUR FIN</td>
+            <td class="impaire number">--</td>
+            <td class="paire number">--</td>
+            <td class="impaire number">1 500,00 &euro;</td>
+        </tr>
+                <tr>
+            <td colspan="3">
+                        </td>
+            <td colspan="3">
+                            <a class="linkA" href="compte.php?nc=1&ong=3&page=2">Suite &gt;&gt;</a>
+                        </td>
+        </tr>
+    </table>
+</div>
+                                                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="message" class="">
+            <input id="msgLarg" type="hidden" name="msgLarg" value="" />
+            <input id="msgHaut" type="hidden" name="msgHaut" value="" />
+            <div id="cache"></div>
+
+            <div id="cadreMsg">
+                <span id="titreMessage"><i></i>Information...<b>x</b></span>
+                <span id="spanMessage"></span>
+                <a class="close" href="#">OK</a>
+            </div>
+        </div>
+
+        <div id="debug">
+            <h6>Debug :<b>X</b></h6>
+            <div class="corps"></div>
+        </div>
+
+    </body>
+
+</html>
+
+
+<!doctype html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8" />
+                <link rel="stylesheet" href="../css/new/bd-mega-priv.css" type="text/css" />
+                        <link rel="stylesheet" href="../css/new/style.css" type="text/css" />
+
+        
+        
+                <link rel="stylesheet" href="/assets/vendor/brandings-stylesheets/dist/css-brands/boursedirect.css">
+                
+        <script language="JavaScript" type="text/javascript" src="/javascript/lib/jquery/1.9.1/jquery.js"></script>
+        <script language="JavaScript" type="text/javascript" src="/javascript/lib/jquery/migrate/1.1.1/jquery-migrate.js"></script>
+        <script language="JavaScript" type="text/javascript" src="/javascript/lib/jquery/ui/jquery-ui-1.10.2.custom.js"></script>
+
+        <script language="JavaScript" type="text/javascript" src="/javascript/legacy/jquery.hoverIntent.js"></script>
+        <script language="JavaScript" type="text/javascript" src="/javascript/legacy/superfish.js"></script>
+
+        <script language="JavaScript" type="text/JavaScript" src="../scripts/main-mega.js"></script>
+
+                <script language="JavaScript" type="text/JavaScript" src="../scripts/compte.js"></script>
+        
+                <script language="JavaScript" type="text/JavaScript" src="../scripts/compteInventaire.js"></script>
+        
+                <script language="JavaScript" type="text/JavaScript" src="/streaming/javascripts/spry/includes/SpryUtils.js"></script>
+                <script language="JavaScript" type="text/JavaScript" src="/streaming/javascripts/spry/includes/SpryData.js"></script>
+        
+        <script language="JavaScript" type="text/javascript" src="/streaming/iframeResizer.contentWindow.js"></script>
+        <script language="JavaScript" type="text/javascript" src="/javascript/legacy/jquery.cookie.js"></script>
+        <link rel="stylesheet" href="/css/font-awesome/css/font-awesome.min.css">
+
+    </head>
+
+    <body class="body-legacy" >
+
+        <div id="center-container">
+            <div id="boxTop">
+                <div id="center">
+                    <div id="blocCentral">
+                        <div class="container container-legacy">
+                            <div class="row">
+                                <div class="col-md-12">
+                                                                        <form id="frmCompte" name="frmCompte" method="get">
+    <input type="hidden" name="ong" value="3" />
+    <div class="champ">
+    <label>Sélectionnez votre compte :</label>
+        <select id="nc" name="nc">
+                    <option value="1" selected>Mon compte ...</option>
+                </select>
+    </div>
+</form>
+
+<br />
+
+<div class="cadre" id="histoCompte"><div class="deco"></div>
+    <h6>Historique de compte</h6>
+    <table class="datas retour table-color-row">
+        <tr>
+            <th>Date op&eacute;ration</th>
+            <th>Date affectation</th>
+            <th>Libell&eacute;</th>
+            <th>Op&eacute;ration</th>
+            <th class="number">Qt&eacute;</th>
+            <th class="number">Cours</th>
+            <th class="number">Montant net</th>
+        </tr>
+                <tr class="row1">
+            <td class="impaire">02/06/2022</td>
+            <td class="paire">02/06/2022</td>
+            <td class="impaire"><a target=_parent href=fiche-valeur.php?val=E:PE500&pl=6&nc=1>AM.ETF PEA SP500 U.ETF EUR FCP AM.E.P.SP500 EUR</a></td>
+            <td class="paire">ACHAT COMPTANT  </td>
+            <td class="impaire number">10</td>
+            <td class="paire number">30,55 &euro;</td>
+            <td class="impaire number">-306,49 &euro;</td>
+        </tr>
+                <tr class="row2">
+            <td class="impaire">01/06/2022</td>
+            <td class="paire">01/06/2022</td>
+            <td class="impaire"><a target=_parent href=fiche-valeur.php?val=E:PAEEM&pl=6&nc=1>AM.PEA MSCI EM.MKTS UC.ETF FCP AM.PEA MSC.EM M.UC</a></td>
+            <td class="paire">ACHAT COMPTANT  </td>
+            <td class="impaire number">10</td>
+            <td class="paire number">21,925 &euro;</td>
+            <td class="impaire number">-220,24 &euro;</td>
+        </tr>
+                <tr>
+            <td colspan="3">
+                            <a class="linkA" href="compte.php?nc=1&ong=3&page=1">&lt;&lt; Pr&eacute;c&eacute;dent</a>
+                        </td>
+            <td colspan="3">
+                        </td>
+        </tr>
+    </table>
+</div>
+                                                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="message" class="">
+            <input id="msgLarg" type="hidden" name="msgLarg" value="" />
+            <input id="msgHaut" type="hidden" name="msgHaut" value="" />
+            <div id="cache"></div>
+
+            <div id="cadreMsg">
+                <span id="titreMessage"><i></i>Information...<b>x</b></span>
+                <span id="spanMessage"></span>
+                <a class="close" href="#">OK</a>
+            </div>
+        </div>
+
+        <div id="debug">
+            <h6>Debug :<b>X</b></h6>
+            <div class="corps"></div>
+        </div>
+
+    </body>
+
+</html>
