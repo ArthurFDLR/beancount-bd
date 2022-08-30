@@ -22,9 +22,12 @@ Add ```BDImporter``` to your [Beancount importers config file](https://beancount
 CONFIG = [
     BDImporter(
         account='Assets:FR:BD:PEA',
-        labels_lut={
-            "AM.ETF PEA SP500 U.ETF EUR FCP AM.E.P.SP500 EUR": "SP500",
-            "LYX.PEA NASDAQ-100 UC.ETF FCP LY.PEANASD.-100UC": "NSDQ",
+        fee_category='Expenses:Finances:Commission',
+        tickers_lut={
+            "AM.E.P.SP500": "PE500",
+            "LY.PEANASD": "PUST",
+            "MSC.EM": "PAEEM",
+            "MSC.EUR": "PCEU",
         }
     ),
 ]
