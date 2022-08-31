@@ -6,7 +6,7 @@ readme = "README.md"
 authors = ["Arthur Findelair <arthfind@gmail.com>"]
 license = "MIT"
 classifiers = [
-    "Development Status :: 4 - Beta",
+    "Development Status :: 3 - Alpha",
     "Environment :: Plugins",
     "Intended Audience :: End Users/Desktop",
     "Intended Audience :: Financial and Insurance Industry",
@@ -15,6 +15,7 @@ classifiers = [
     "Programming Language :: Python :: 3.6",
     "Programming Language :: Python :: 3.7",
     "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
     "Programming Language :: Python :: 3 :: Only",
 ]
 include = ["README.md", "LICENSE.txt"]
